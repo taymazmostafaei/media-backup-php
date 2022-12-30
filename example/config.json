@@ -1,0 +1,8 @@
+{
+    "Directories": [
+        "media",
+        "media/thumbnails"
+    ],
+
+    "BackupExportPath": "."
+}
