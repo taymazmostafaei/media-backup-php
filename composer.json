@@ -16,5 +16,8 @@
     ],
     "require": {
         "maxakawizard/json-collection-parser": "^1.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
     }
 }

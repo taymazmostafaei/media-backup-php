@@ -76,6 +76,20 @@ trait Authorized
         '4av',
         'swf',
 
-
     ];
+
+    public function isAcceptable($filename, $custom = false)
+    {
+        $fileFormat = (explode('.', $filename))[1];
+        if (
+            in_array($fileFormat, $this->Videos) or
+            in_array($fileFormat, $this->Audios) or
+            in_array($fileFormat, $this->Pictures)
+        ) 
+        {
+            return true;
+        }
+        
+        return false;
+    }
 }
