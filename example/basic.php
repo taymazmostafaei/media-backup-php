@@ -4,7 +4,6 @@ use Taymaz\Mediabackup\Mediabackup;
 
 require "../vendor/autoload.php";
 
-
-Mediabackup::CreateBackups(function($files){
+Mediabackup::configFile("./config.json")->CreateBackups(function($files){
     print_r( $files );
 });

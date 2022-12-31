@@ -14,5 +14,7 @@
             "email": "taymaz@resup.ir"
         }
     ],
-    "require": {}
+    "require": {
+        "maxakawizard/json-collection-parser": "^1.9"
+    }
 }
