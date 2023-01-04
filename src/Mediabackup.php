@@ -22,7 +22,7 @@ class Mediabackup
     public static function CreateBackups($callback)
     {
         $config = new ConfigLoader(self::$configFile);
-        ClassName($config);
-        return $callback(["test1", "test2"]);
+
+        return $callback(new BackupGenrate($config));
     }
 }

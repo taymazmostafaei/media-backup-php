@@ -81,6 +81,7 @@ trait Authorized
     public function isAcceptable($filename, $custom = false)
     {
         $fileFormat = (explode('.', $filename))[1];
+        #print_r($fileFormat);
         if (
             in_array($fileFormat, $this->Videos) or
             in_array($fileFormat, $this->Audios) or
@@ -89,6 +90,7 @@ trait Authorized
         {
             return true;
         }
+        
         
         return false;
     }

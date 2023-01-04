@@ -1,6 +1,7 @@
 {
     "Directories": [
         "media",
+        ".",
         "media/thumbnails"
     ],
 
