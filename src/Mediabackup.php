@@ -19,7 +19,7 @@ class Mediabackup
         return new static;
     }
 
-    public static function CreateBackups($callback)
+    public static function CreateBackup($callback)
     {
         $config = new ConfigLoader(self::$configFile);
 

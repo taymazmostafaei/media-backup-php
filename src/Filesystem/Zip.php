@@ -15,17 +15,16 @@ trait Zip
         $BackupExportPath = $config->configs->BackupExportPath;
         if ($zip->open($BackupExportPath == '.' ? $bacupZipFile : $BackupExportPath . '/' . $bacupZipFile , ZipArchive::CREATE) === TRUE) {
 
-            print_r('writing file');
-
             foreach ($files as $file) {
                 $zip->addFile($file, $file);
             }
 
-            print_r('saving file');
-
+            $zipFilePath = $zip->filename;
             $zip->close();
+
+            return $zipFilePath;
         }
-        print_r('your backup up genrated.');
+
 
     }
 }
