@@ -4,10 +4,12 @@ namespace Taymaz\Mediabackup;
 
 use Taymaz\Mediabackup\Filesystem\Authorized;
 use Taymaz\Mediabackup\Filesystem\Reader;
+use Taymaz\Mediabackup\Filesystem\Zip;
 
 class BackupGenrate
 {
     use Authorized;
+    use Zip;
 
     public function __construct(ConfigLoader $config)
     {
@@ -15,7 +17,7 @@ class BackupGenrate
         $filesReader = new Reader();
         $files = $filesReader->fileList($config->configs->Directories);
 
-        print_r($files);
+        //print_r($files);
         $Authorizedfiles = [];
         //check 
         foreach ($files as $file) {
@@ -23,6 +25,8 @@ class BackupGenrate
                 array_push($Authorizedfiles, $file);
             }
         }
-        print_r($Authorizedfiles);
+        
+        $backupFiles = $this->createZip($Authorizedfiles, $config);
+        return $backupFiles;
     }
 }
