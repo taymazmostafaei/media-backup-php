@@ -11,6 +11,7 @@ class BackupGenrate
     use Authorized;
     use Zip;
     public $path;
+    public $filename;
 
     public function __construct(ConfigLoader $config)
     {
@@ -29,6 +30,7 @@ class BackupGenrate
         
         $backupFile = $this->createZip($Authorizedfiles, $config);
         $this->path = $backupFile;
+        $this->filename = basename($backupFile);
     }
 
     public function remove(){
