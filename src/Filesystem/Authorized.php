@@ -80,8 +80,9 @@ trait Authorized
 
     public function isAcceptable($filename, $custom = false)
     {
-        $fileFormat = (explode('.', $filename))[1];
-        #print_r($fileFormat);
+        $basename = basename($filename);
+        $fileFormat = (explode('.', $basename))[1];
+        
         if (
             in_array($fileFormat, $this->Videos) or
             in_array($fileFormat, $this->Audios) or
