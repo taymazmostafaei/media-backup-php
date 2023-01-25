@@ -6,6 +6,10 @@ use Taymaz\Mediabackup\Filesystem\Authorized;
 use Taymaz\Mediabackup\Filesystem\Reader;
 use Taymaz\Mediabackup\Filesystem\Zip;
 
+/**
+ * main controller role 
+ * list files , authorize , genrate zip file
+ */
 class BackupGenrate
 {
     use Authorized;

@@ -2,16 +2,20 @@
 
 namespace Taymaz\Mediabackup;
 
+/**
+ * public function for package user
+ * features into package after genrate backup
+ */
 trait BackupMethodes
 {
     public $path;
     public $filename;
 
-    public function setPath($path){
+    protected function setPath($path){
         $this->path = $path;
     }
 
-    public function setFilename($filename){
+    protected function setFilename($filename){
         $this->filename = $filename;
     }
 
