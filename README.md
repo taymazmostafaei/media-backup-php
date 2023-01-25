@@ -21,7 +21,7 @@ for starting you need to create a file named config to setup backup options like
 
 ### First create your config file like this
 Set your own particular config
-```sh
+```json
 {
     "Directories": [
         "media",
@@ -40,7 +40,7 @@ use Taymaz\Mediabackup\Mediabackup;
 ```
 
 and give config file path then get your backup file path in clallback function
-```sh
+```php
 Mediabackup::configFile("./config.json")->CreateBackup(function($backup){
     echo $backup->path;
 });
@@ -50,7 +50,7 @@ Mediabackup::configFile("./config.json")->CreateBackup(function($backup){
 
 ``$backup`` methodes you can use :
 
-```sh
+```php
 $backup->remove(); //true
 
 $backup->filename; //backup-2023-01-15.zip
