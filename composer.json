@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "maxakawizard/json-collection-parser": "^1.9"
+        "maxakawizard/json-collection-parser": "^1.9",
+        "divineomega/php-cli-progress-bar": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "9.5"
