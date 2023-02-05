@@ -3,7 +3,7 @@
 [![Latest Unstable Version](http://poser.pugx.org/arcaptcha/arcaptcha-php/v/unstable)](https://packagist.org/packages/taymaz/mediabackup) [![License](http://poser.pugx.org/taymaz/mediabackup/license)](https://packagist.org/packages/taymaz/mediabackup)
 [![PHP Version Require](http://poser.pugx.org/taymaz/mediabackup/require/php)](https://packagist.org/packages/taymaz/mediabackup)
 
-<img alt="screenshot" src="https://raw.githubusercontent.com/taymazmostafaei/mediaBackup/master/backup.gif" with="200"/>
+<img alt="screenshot" src="https://raw.githubusercontent.com/taymazmostafaei/mediaBackup/master/backup.gif" width="70%"/>
 
 # mediaBackup
 ### backup php package
